@@ -6,109 +6,173 @@
   <title>Club de Pétanque de Baldenheim</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="resources/logo.png">
 </head>
 <body>
+
+  <button id="back-to-top">↑</button>
 
   <header>
     <div class="container header-flex">
       <div class="brand">
-        <img src="resources/logo.png" alt="Logo" />
-        <div>
+        <img id="icon" src="resources/logo.png" alt="Logo" />
+        <div class="brand-text">
           <strong>Pétanque club des cochonnets de Baldenheim</strong><br>
-          <span style="font-size: 13px; color: var(--muted);">Site officiel</span>
+          <span class="site-officiel">Site officiel</span>
         </div>
       </div>
-      <nav>
-        <a href="#accueil" class="reveal">Accueil</a>
-        <a href="#evenements" class="reveal">Événements</a>
-        <a href="#inscription" class="reveal">Inscription</a>
-        <a href="#contact" class="reveal">Contact</a>
+
+      <button id="menu-toggle">☰</button>
+
+      <nav id="nav-menu">
+        <a href="#accueil">Accueil</a>
+        <a href="#evenements">Événements</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="theme-toggle">🌙</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
 
-  <section class="hero" id="accueil">
-    <div>
-      <h1>Bienvenue au Pétanque club cochonets de Baldenheim</h1>
-      <p>Des moments conviviaux, des tournois et une ambiance chaleureuse t’attendent !</p>
-      <a href="#inscription" class="btn">Devenir membre</a>
+    <section class="hero" id="accueil">
+      <div>
+        <h1>Bienvenue au Pétanque club cochonets de Baldenheim</h1>
+        <p>Des moments conviviaux, des tournois et une ambiance chaleureuse t’attendent !</p>
+        <a href="#inscription" class="btn">Devenir membre</a>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Horaires</h3>
+            <p>Tous les jours (Les terrains sont mis à disposition des membres du club)</p>
+          </div>
+          <div class="card">
+            <h3>Tarifs</h3>
+            <p>Adulte — 20 €<br>Jeune — 10 €</p>
+          </div>
+          <div class="card">
+            <h3>Contact</h3>
+            <p>JEAGER Jean-Paul (président)<br>06 98 51 77 80</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evenements">
+      <h2>Événements à venir</h2>
+      <p>Retrouve ici tous nos tournois, concours et rencontres amicales à Baldenheim.</p>
 
       <div class="cards">
         <div class="card">
-          <h3>Horaires</h3>
-          <p>Tous les jours(Les terrains sont mis à disposition des membres du club)<br></p>
+          <h3>Tournoi d’été</h3>
+          <p>Samedi 15 juin — 9h00<br>Doublettes formées</p>
         </div>
         <div class="card">
-          <h3>Tarifs</h3>
-          <p>Adulte — 20 €<br>Jeune — 10 €</p>
+          <h3>Concours de la rentrée</h3>
+          <p>Dimanche 8 septembre — 14h00<br>Ouvert à tous</p>
         </div>
         <div class="card">
-          <h3>Contact</h3>
-          <p>JEAGER Jean-Paul(président)<br>06 98 51 77 80</p>
+          <h3>Challenge du Président</h3>
+          <p>Samedi 19 octobre — 10h00<br>Licence obligatoire</p>
+        </div>
+        <div class="card">
+          <h3>Tournoi d’été</h3>
+          <p>Samedi 15 juin — 9h00<br>Doublettes formées</p>
+        </div>
+        <div class="card">
+          <h3>Concours de la rentrée</h3>
+          <p>Dimanche 8 septembre — 14h00<br>Ouvert à tous</p>
+        </div>
+        <div class="card">
+          <h3>Challenge du Président</h3>
+          <p>Samedi 19 octobre — 10h00<br>Licence obligatoire</p>
+        </div>
+        <div class="card">
+          <h3>Tournoi d’été</h3>
+          <p>Samedi 15 juin — 9h00<br>Doublettes formées</p>
+        </div>
+        <div class="card">
+          <h3>Concours de la rentrée</h3>
+          <p>Dimanche 8 septembre — 14h00<br>Ouvert à tous</p>
+        </div>
+        <div class="card">
+          <h3>Challenge du Président</h3>
+          <p>Samedi 19 octobre — 10h00<br>Licence obligatoire</p>
+        </div>
+        <div class="card">
+          <h3>Tournoi d’été</h3>
+          <p>Samedi 15 juin — 9h00<br>Doublettes formées</p>
+        </div>
+        <div class="card">
+          <h3>Concours de la rentrée</h3>
+          <p>Dimanche 8 septembre — 14h00<br>Ouvert à tous</p>
+        </div>
+        <div class="card">
+          <h3>Challenge du Président</h3>
+          <p>Samedi 19 octobre — 10h00<br>Licence obligatoire</p>
+        </div>
+        <div class="card">
+          <h3>Tournoi d’été</h3>
+          <p>Samedi 15 juin — 9h00<br>Doublettes formées</p>
+        </div>
+        <div class="card">
+          <h3>Concours de la rentrée</h3>
+          <p>Dimanche 8 septembre — 14h00<br>Ouvert à tous</p>
+        </div>
+        <div class="card">
+          <h3>Challenge du Président</h3>
+          <p>Samedi 19 octobre — 10h00<br>Licence obligatoire</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="evenements">
-  <h2>Événements à venir</h2>
-  <p>Retrouve ici tous nos tournois, concours et rencontres amicales à Baldenheim.</p>
+    <section id="inscription">
+      <h2>Inscription & Paiement</h2>
+      <p>Remplis le formulaire ci-dessous pour t’inscrire et régler ta cotisation en ligne.</p>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Tournoi d’été</h3>
-      <p>Samedi 15 juin — 9h00<br>Doublettes formées</p>
-    </div>
-    <div class="card">
-      <h3>Concours de la rentrée</h3>
-      <p>Dimanche 8 septembre — 14h00<br>Ouvert à tous</p>
-    </div>
-    <div class="card">
-      <h3>Challenge du Président</h3>
-      <p>Samedi 19 octobre — 10h00<br>Licence obligatoire</p>
-    </div>
-  </div>
-</section>
+      <form class="form" id="inscription-form">
+        <label for="nom">Nom</label>
+        <input id="nom" placeholder="Nom" required>
 
-  <section id="inscription">
-    <h2>Inscription & Paiement</h2>
-    <p>Remplis le formulaire ci-dessous pour t’inscrire et régler ta cotisation en ligne.</p>
+        <label for="prenom">Prénom</label>
+        <input id="prenom" placeholder="Prénom" required>
 
-    <form class="form" id="inscription-form">
-      <label>Nom</label>
-      <input id="nom" placeholder="Nom" required>
-      <label>Prénom</label>
-      <input id="prenom" placeholder="Prénom" required>
-      <label>Email</label>
-      <input id="email" type="email" placeholder="Email" required>
-      <label>Statut</label>
-      <select id="statut" required>
-        <option value="">Choisis ton statut</option>
-        <option value="20">Adulte - 20 €</option>
-        <option value="20">Jeune - 10 €</option>
-      </select>
-      <div>Attention : <span id="waring-display">Une verification de l'âge peut être demander !</span></div>
-      <div>Montant à payer : <span id="price-display">—</span></div>
-      <button class="btn" type="submit">Valider l’inscription</button>
-    </form>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Email" required>
 
-    <div id="paypal-button-container"></div>
-  </section>
+        <label for="statut">Statut</label>
+        <select id="statut" required>
+          <option value="">Choisis ton statut</option>
+          <option value="20">Adulte - 20 €</option>
+          <option value="10">Jeune - 10 €</option>
+        </select>
 
-  <section id="contact" style="margin-top:60px;">
-    <h2>Contact</h2>
-    <p>Terrain municipal — Rue de Hessenheim, 67600 Baldenheim</p>
-    <p><strong>Président : </strong>JEAGER Jean-Paul — 06 98 51 77 80</p>
-  </section>
+        <div>Attention : <span id="waring-display">Une vérification de l'âge peut être demandée !</span></div>
+        <div>Montant à payer : <span id="price-display">—</span></div>
 
-</main>
+        <button class="btn" type="submit">Valider l’inscription</button>
+      </form>
+
+      <div id="paypal-button-container"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Terrain municipal — Rue de Hessenheim, 67600 Baldenheim</p>
+      <p><strong>Président : </strong>JEAGER Jean-Paul — 06 98 51 77 80</p>
+    </section>
+
+  </main>
+
 
   <footer>
     © Club de Pétanque Baldenheim — Tous droits réservés 2025
   </footer>
+
+  <!-- SCRIPTS -->
   <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR"></script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
+
 </body>
 </html>
