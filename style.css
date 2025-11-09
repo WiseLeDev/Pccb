@@ -15,21 +15,21 @@
   transition: all 0.25s ease-out; /* ✨ transitions globales */
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+html, body {  
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
 }
 
 body {
-  background: linear-gradient(180deg, #fff, #f7f8fc);
-  color: var(--dark);
-  line-height: 1.5;
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: fadeIn 1s ease-in-out; /* ✨ apparition douce */
+	background: radial-gradient(circle at center, rgba(231, 76, 60, 0.1), transparent 70%);
+  	color: var(--dark);
+  	line-height: 1.5;
+  	scroll-behavior: smooth;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	animation: fadeIn 1s ease-in-out; /* ✨ apparition douce */
 }
 
 @keyframes fadeIn {
@@ -127,8 +127,6 @@ nav a:hover::after {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(231, 76, 60, 0.1), transparent 70%);
-  animation: moveBg 10s infinite linear;
   z-index: 0;
 }
 
@@ -279,6 +277,12 @@ nav a:hover::after {
 }
 
 #price-display {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 18px;
+}
+
+#waring-display {
   font-weight: 700;
   color: var(--accent);
   font-size: 18px;
