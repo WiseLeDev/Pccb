@@ -82,4 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
   icon.addEventListener('click', () => {
     location.reload();
   });
+
+  window.addEventListener("scroll", () => {
+    const progress = document.getElementById("scroll-progress");
+    const height = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = (window.scrollY / height) * 100;
+    progress.style.width = scrolled + "%";
+});
 });
